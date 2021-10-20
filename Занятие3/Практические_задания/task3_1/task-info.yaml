@@ -4,15 +4,15 @@ files:
   visible: true
   placeholders:
   - offset: 33
-    length: 84
+    length: 79
     placeholder_text: '...  # TODO с помощью методов строки join и split очистить
       строку от лишних пробелов'
     initial_state:
       length: 84
       offset: 33
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       words_list = str_.split(" ")
           print(words_list)
@@ -36,6 +36,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  time: Wed, 20 Oct 2021 16:09:33 UTC
 record: -1
 post_submission_on_open: true

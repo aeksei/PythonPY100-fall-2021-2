@@ -3,15 +3,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 343
-    length: 27
+  - offset: 153
+    length: 15
     placeholder_text: '...  # TODO вызвать функцию'
     initial_state:
       length: 27
       offset: 343
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: add_func(5, 10)
   text: |
     # Пусть функция принимает два числа, складывает их и возвращает результат
@@ -32,6 +32,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true
