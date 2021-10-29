@@ -1,6 +1,14 @@
 from logic import init_field, is_empty_cell, set_cell, is_win, is_available_cell
 
 
+def is_win_cli(field, player_symbol):
+    if is_win(field):
+        print(f"Победил игрок {player_symbol}")
+        return True
+    else:
+        return False
+
+
 def step_first_player(field: list, player_symbol: str):
     row_index, col_index = get_step(field, player_symbol)
     set_cell(field, row_index, col_index, player_symbol)
@@ -65,8 +73,7 @@ def main():
     while True:
         step_first_player(field, first_player)
 
-        if is_win(field):
-            print(f"Победил игрок {first_player}")
+        if is_win_cli(field, first_player):
             break
 
         if not is_available_cell(field):
@@ -75,8 +82,7 @@ def main():
 
         step_second_player(field, second_player)
 
-        if is_win(field):
-            print(f"Победил игрок {second_player}")
+        if is_win_cli(field, second_player):
             break
 
         if not is_available_cell(field):

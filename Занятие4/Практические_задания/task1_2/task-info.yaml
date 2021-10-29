@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 48
-    length: 53
+    length: 65
     placeholder_text: '[i ** 2 for i in range(10)])  # TODO добавить условие'
     initial_state:
       length: 53
       offset: 48
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '[i ** 2 for i in range(n) if i % 2 == 0])'
   text: |
     if __name__ == "__main__":
@@ -21,6 +21,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  time: Wed, 27 Oct 2021 15:24:55 UTC
 record: -1
 post_submission_on_open: true

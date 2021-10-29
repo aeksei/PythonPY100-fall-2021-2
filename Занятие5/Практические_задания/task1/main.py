@@ -1,11 +1,13 @@
 if __name__ == "__main__":
+
     matrix = [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9]
+        [i * j for j in range(1, 10)]
+        for i in range(1, 10)
     ]
 
-    for row in range(len(matrix)):
-        for col in range(len(matrix[0])):
-            print(matrix[row][col], end=" ")
+    for row in range(9):
+        for col in range(9):
+            ceil = matrix[row][col]
+            print(f"{ceil:_>2}", end=" ")
         print()
+
